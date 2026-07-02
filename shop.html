@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop – Oakhaven Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="nav-container">
+        <a href="index.html" class="navlogo">🛋️ Oakhaven Furniture</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shop.html" class="nav-shop">Shop Now</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <p class="breadcrumb"><a href="index.html">Home</a> › Shop</p>
+    <h1>Furniture Built for Real Homes</h1>
+    <p>Every piece is solid wood, hand-finished, and delivered fully assembled. Order any item directly via WhatsApp.</p>
+</div>
+
+<!-- SHOP SECTION -->
+<section class="shop-section">
+    <div class="container">
+
+        <!-- Filters -->
+        <div class="product-filters">
+            <button class="filter-btn active" data-filter="all">All Furniture</button>
+            <button class="filter-btn" data-filter="living">Living Room</button>
+            <button class="filter-btn" data-filter="dining">Dining</button>
+            <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+            <button class="filter-btn" data-filter="bundle">Bundles</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+
+            <!-- Product 1 -->
+            <div class="product-card reveal" data-category="living">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1757862351841-c6f7ac0b0201?auto=format&fit=crop&w=800&q=80" alt="Modern 3-Seater Sofa" loading="lazy">
+                    <span class="product-badge badge-new">Bestseller</span>
+                </div>
+                <div class="product-body">
+                    <div class="product-category">Living Room</div>
+                    <div class="product-name">Modern 3-Seater Sofa</div>
+                    <div class="product-desc">Solid hardwood frame with high-density foam cushions and performance fabric. Built to hold its shape for years.</div>
+                    <div class="size-selector">
+                        <button class="size-btn" data-price="1890">Charcoal</button>
+                        <button class="size-btn" data-price="1890">Sand</button>
+                        <button class="size-btn" data-price="1990">Forest Green</button>
+                    </div>
+                    <div class="product-meta">
+                        <div class="product-price">QAR <span class="amount">1890</span></div>
+                        <div class="product-weight">3-seater</div>
+                    </div>
+                    <div class="qty-row" style="margin-top:8px;">
+                        <button class="qty-btn qty-minus" aria-label="Decrease">−</button>
+                        <div class="qty-display">1</div>
+                        <button class="qty-btn qty-plus" aria-label="Increase">+</button>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-order-wa">🛒 Order via WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card reveal" data-category="living">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1750045662226-536c4e05abfa?auto=format&fit=crop&w=800&q=80" alt="Velvet Accent Armchair">
+                    <span class="product-badge">New Arrival</span>
+                </div>
+                <div class="product-body">
+                    <div class="product-category">Living Room</div>
+                    <div class="product-name">Velvet Accent Armchair</div>
+                    <div class="product-desc">A statement chair with a solid beechwood frame and plush velvet upholstery. The finishing touch for any reading corner.</div>
+                    <div class="size-selector">
+                        <button class="size-btn" data-price="690">Emerald</button>
+                        <button class="size-btn" data-price="690">Mustard</button>
+                        <button class="size-btn" data-price="710">Terracotta</button>
+                    </div>
+                    <div class="product-meta">
+                        <div class="product-price">QAR <span class="amount">690</span></div>
+                        <div class="product-weight">Single seat</div>
+                    </div>
+                    <div class="qty-row" style="margin-top:8px;">
+                        <button class="qty-btn qty-minus">−</button>
+                        <div class="qty-display">1</div>
+                        <button class="qty-btn qty-plus">+</button>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-order-wa">🛒 Order via WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card reveal" data-category="dining">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1764076327046-fe35f955cba1?auto=format&fit=crop&w=800&q=80" alt="Solid Oak Dining Table">
+                    <span class="product-badge badge-new">New</span>
+                </div>
+                <div class="product-body">
+                    <div class="product-category">Dining</div>
+                    <div class="product-name">Solid Oak Dining Table</div>
+                    <div class="product-desc">A rustic-modern dining table hand-finished from solid oak. Seats up to 6 comfortably, built to outlast every dinner party.</div>
+                    <div class="size-selector">
+                        <button class="size-btn" data-price="2190">150 cm</button>
+                        <button class="size-btn" data-price="2490">180 cm</button>
+                        <button class="size-btn" data-price="2890">220 cm</button>
+                    </div>
+                    <div class="product-meta">
+                        <div class="product-price">QAR <span class="amount">2190</span></div>
+                        <div class="product-weight">Seats 4–6</div>
+                    </div>
+                    <div class="qty-row" style="margin-top:8px;">
+                        <button class="qty-btn qty-minus">−</button>
+                        <div class="qty-display">1</div>
+                        <button class="qty-btn qty-plus">+</button>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-order-wa">🛒 Order via WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card reveal" data-category="dining">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1764076327046-fe35f955cba1?auto=format&fit=crop&w=800&q=80" alt="Upholstered Dining Chairs, Set of 2">
+                </div>
+                <div class="product-body">
+                    <div class="product-category">Dining</div>
+                    <div class="product-name">Upholstered Dining Chairs (Set of 2)</div>
+                    <div class="product-desc">Solid wood legs with a padded, linen-upholstered seat. Sold in pairs to match any table size.</div>
+                    <div class="size-selector">
+                        <button class="size-btn" data-price="490">Natural Oak</button>
+                        <button class="size-btn" data-price="490">Walnut</button>
+                    </div>
+                    <div class="product-meta">
+                        <div class="product-price">QAR <span class="amount">490</span></div>
+                        <div class="product-weight">Set of 2</div>
+                    </div>
+                    <div class="qty-row" style="margin-top:8px;">
+                        <button class="qty-btn qty-minus">−</button>
+                        <div class="qty-display">1</div>
+                        <button class="qty-btn qty-plus">+</button>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-order-wa">🛒 Order via WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card reveal" data-category="living">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1688127145963-1063f22622a5?auto=format&fit=crop&w=800&q=80" alt="Handcrafted Solid Wood Coffee Table">
+                    <span class="product-badge" style="background:#8e6a3f;">Top Rated</span>
+                </div>
+                <div class="product-body">
+                    <div class="product-category">Living Room</div>
+                    <div class="product-name">Handcrafted Solid Wood Coffee Table</div>
+                    <div class="product-desc">A single slab of kiln-dried timber, hand-sanded and oiled to bring out the natural grain. No two are exactly alike.</div>
+                    <div class="size-selector">
+                        <button class="size-btn" data-price="890">Round</button>
+                        <button class="size-btn" data-price="990">Rectangular</button>
+                    </div>
+                    <div class="product-meta">
+                        <div class="product-price">QAR <span class="amount">890</span></div>
+                        <div class="product-weight">Solid wood</div>
+                    </div>
+                    <div class="qty-row" style="margin-top:8px;">
+                        <button class="qty-btn qty-minus">−</button>
+                        <div class="qty-display">1</div>
+                        <button class="qty-btn qty-plus">+</button>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-order-wa">🛒 Order via WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card reveal" data-category="bedroom">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1748679979601-dc9ec43d900d?auto=format&fit=crop&w=800&q=80" alt="Platform Bed Frame, Queen">
+                </div>
+                <div class="product-body">
+                    <div class="product-category">Bedroom</div>
+                    <div class="product-name">Platform Bed Frame</div>
+                    <div class="product-desc">A low-profile solid wood platform bed with a padded headboard. No box spring needed — just add your mattress.</div>
+                    <div class="size-selector">
+                        <button class="size-btn" data-price="1590">Queen</button>
+                        <button class="size-btn" data-price="1890">King</button>
+                    </div>
+                    <div class="product-meta">
+                        <div class="product-price">QAR <span class="amount">1590</span></div>
+                        <div class="product-weight">Frame only</div>
+                    </div>
+                    <div class="qty-row" style="margin-top:8px;">
+                        <button class="qty-btn qty-minus">−</button>
+                        <div class="qty-display">1</div>
+                        <button class="qty-btn qty-plus">+</button>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-order-wa">🛒 Order via WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card reveal" data-category="bedroom">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1748679979601-dc9ec43d900d?auto=format&fit=crop&w=800&q=80" alt="Bedside Nightstands, Set of 2">
+                </div>
+                <div class="product-body">
+                    <div class="product-category">Bedroom</div>
+                    <div class="product-name">Bedside Nightstand (Set of 2)</div>
+                    <div class="product-desc">Compact solid wood nightstands with a soft-close drawer and open shelf. Matches every bed frame in the collection.</div>
+                    <div class="size-selector">
+                        <button class="size-btn" data-price="590">Natural Oak</button>
+                        <button class="size-btn" data-price="590">Walnut</button>
+                    </div>
+                    <div class="product-meta">
+                        <div class="product-price">QAR <span class="amount">590</span></div>
+                        <div class="product-weight">Set of 2</div>
+                    </div>
+                    <div class="qty-row" style="margin-top:8px;">
+                        <button class="qty-btn qty-minus">−</button>
+                        <div class="qty-display">1</div>
+                        <button class="qty-btn qty-plus">+</button>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-order-wa">🛒 Order via WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card reveal" data-category="living">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1750045662226-536c4e05abfa?auto=format&fit=crop&w=800&q=80" alt="Reading Armchair with Ottoman">
+                    <span class="product-badge badge-sale">Bundle Deal</span>
+                </div>
+                <div class="product-body">
+                    <div class="product-category">Living Room</div>
+                    <div class="product-name">Reading Armchair with Ottoman</div>
+                    <div class="product-desc">A deep, supportive lounge chair paired with a matching footstool. Solid wood legs, removable fabric covers.</div>
+                    <div class="size-selector">
+                        <button class="size-btn" data-price="990">Grey</button>
+                        <button class="size-btn" data-price="990">Camel</button>
+                    </div>
+                    <div class="product-meta">
+                        <div class="product-price">QAR <span class="amount">990</span></div>
+                        <div class="product-weight">Chair + ottoman</div>
+                    </div>
+                    <div class="qty-row" style="margin-top:8px;">
+                        <button class="qty-btn qty-minus">−</button>
+                        <div class="qty-display">1</div>
+                        <button class="qty-btn qty-plus">+</button>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-order-wa">🛒 Order via WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 9 — Starter Bundle -->
+            <div class="product-card reveal" data-category="bundle">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1768609239321-1cfe14893e80?auto=format&fit=crop&w=800&q=80" alt="New Home Living Room Bundle">
+                    <span class="product-badge badge-sale">Save 20%</span>
+                </div>
+                <div class="product-body">
+                    <div class="product-category">Bundle</div>
+                    <div class="product-name">New Home Living Room Bundle</div>
+                    <div class="product-desc">Everything a new living room needs: 3-seater sofa + coffee table + accent chair. The easiest way to furnish a whole room at once.</div>
+                    <div class="size-selector">
+                        <button class="size-btn" data-price="2990">Compact</button>
+                        <button class="size-btn" data-price="3390">Standard</button>
+                        <button class="size-btn" data-price="3790">Large</button>
+                    </div>
+                    <div class="product-meta">
+                        <div class="product-price">
+                            <span class="original">QAR 3740</span>
+                            QAR <span class="amount">2990</span>
+                        </div>
+                    </div>
+                    <div class="qty-row" style="margin-top:8px;">
+                        <button class="qty-btn qty-minus">−</button>
+                        <div class="qty-display">1</div>
+                        <button class="qty-btn qty-plus">+</button>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-order-wa">🛒 Order via WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /product-grid -->
+    </div>
+</section>
+
+<!-- HOW TO ORDER STRIP -->
+<section style="background:var(--dark); padding:72px 0;">
+    <div class="container" style="text-align:center;">
+        <span class="badge badge-dark">Simple Ordering</span>
+        <h2 style="color:#fff; font-size:clamp(1.8rem,3vw,2.4rem); font-weight:800; margin-bottom:48px;">How to order in 3 easy steps</h2>
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:32px; max-width:860px; margin:0 auto;">
+            <div style="color:#fff; text-align:center;">
+                <div style="width:56px;height:56px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;margin:0 auto 18px;">1</div>
+                <h3 style="font-size:1rem;font-weight:700;margin-bottom:8px;">Pick your piece</h3>
+                <p style="font-size:0.88rem;color:rgba(255,255,255,0.6);line-height:1.65;">Select the finish and size that suits your space above.</p>
+            </div>
+            <div style="color:#fff; text-align:center;">
+                <div style="width:56px;height:56px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;margin:0 auto 18px;">2</div>
+                <h3 style="font-size:1rem;font-weight:700;margin-bottom:8px;">Tap "Order via WhatsApp"</h3>
+                <p style="font-size:0.88rem;color:rgba(255,255,255,0.6);line-height:1.65;">Fill in your name, phone, and delivery area. Takes 30 seconds.</p>
+            </div>
+            <div style="color:#fff; text-align:center;">
+                <div style="width:56px;height:56px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;margin:0 auto 18px;">3</div>
+                <h3 style="font-size:1rem;font-weight:700;margin-bottom:8px;">We confirm &amp; deliver</h3>
+                <p style="font-size:0.88rem;color:rgba(255,255,255,0.6);line-height:1.65;">Our team confirms your order on WhatsApp and schedules delivery &amp; assembly.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <div class="footer-logo">🛋️ Oakhaven Furniture</div>
+            <p>Solid wood, honest prices, real craftsmanship. Built to be lived on for years, not replaced every season.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>📞 <a href="tel:+97474089629" style="color:rgba(255,255,255,0.7)">+974 7408 9629</a></p>
+            <p>✉️ hello@oakhaven.qa</p>
+            <div class="social-icons">
+                <a href="#"><img src="https://img.icons8.com/ios-filled/20/ffffff/facebook-new.png" alt="Facebook" width="20" height="20" loading="lazy"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png" alt="Instagram" width="20" height="20" loading="lazy"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/20/ffffff/twitter.png" alt="Twitter" width="20" height="20" loading="lazy"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Oakhaven Furniture. All rights reserved. | Order via WhatsApp: +974 7408 9629</p>
+    </div>
+</footer>
+
+<!-- FLOATING ACTION BUTTONS -->
+<a href="https://wa.me/97474089629" class="fab fab-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.103 1.518 5.829L.057 23.886a.5.5 0 0 0 .611.611l6.101-1.457A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.844 9.844 0 0 1-5.031-1.378l-.36-.214-3.733.892.908-3.65-.234-.374A9.847 9.847 0 0 1 2.118 12C2.118 6.533 6.533 2.118 12 2.118S21.882 6.533 21.882 12 17.467 21.882 12 21.882z"/>
+    </svg>
+</a>
+<a href="tel:+97474089629" class="fab fab-phone" aria-label="Call Us">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+        <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.21 2.2z"/>
+    </svg>
+</a>
+
+<!-- ============================================================
+     WHATSAPP ORDER MODAL
+     ============================================================ -->
+<div class="modal-overlay" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalProductName">
+    <div class="modal">
+        <button class="modal-close" onclick="closeOrderModal()" aria-label="Close">×</button>
+        <h3>Complete Your Order</h3>
+        <p>Fill in your details and we'll open WhatsApp with everything pre-filled.</p>
+
+        <!-- Product summary -->
+        <div class="modal-product">
+            <img class="modal-product-img" src="" alt="Product">
+            <div class="modal-product-info">
+                <h4 class="modal-product-name" id="modalProductName">Product Name</h4>
+                <p class="modal-product-desc">Option</p>
+                <div class="modal-product-price">QAR <span class="amount">0</span></div>
+            </div>
+        </div>
+
+        <form id="orderForm" novalidate>
+            <!-- Size selector in modal -->
+            <div style="margin-bottom:16px;">
+                <label style="font-size:0.85rem;font-weight:600;color:var(--dark);display:block;margin-bottom:8px;">Finish / Option</label>
+                <div class="size-selector" id="modalSizes"></div>
+            </div>
+
+            <!-- Qty in modal -->
+            <div style="margin-bottom:20px;">
+                <label style="font-size:0.85rem;font-weight:600;color:var(--dark);display:block;margin-bottom:8px;">Quantity</label>
+                <div class="qty-row">
+                    <button type="button" class="qty-btn qty-minus">−</button>
+                    <div class="qty-display">1</div>
+                    <button type="button" class="qty-btn qty-plus">+</button>
+                </div>
+            </div>
+
+            <div class="modal-form-group">
+                <label for="oName">Your Name *</label>
+                <input type="text" id="oName" placeholder="e.g. Ahmed Al-Rashid" required>
+            </div>
+            <div class="modal-form-group">
+                <label for="oPhone">Phone / WhatsApp *</label>
+                <input type="tel" id="oPhone" placeholder="+974 XXXX XXXX" required>
+            </div>
+            <div class="modal-form-group">
+                <label for="oArea">Delivery Area</label>
+                <input type="text" id="oArea" placeholder="e.g. Al Waab, Doha">
+            </div>
+            <div class="modal-form-group">
+                <label for="oNotes">Notes (optional)</label>
+                <textarea id="oNotes" placeholder="Delivery access, floor number, preferred time…"></textarea>
+            </div>
+
+            <button type="submit" class="modal-wa-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.103 1.518 5.829L.057 23.886a.5.5 0 0 0 .611.611l6.101-1.457A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.882a9.844 9.844 0 0 1-5.031-1.378l-.36-.214-3.733.892.908-3.65-.234-.374A9.847 9.847 0 0 1 2.118 12C2.118 6.533 6.533 2.118 12 2.118S21.882 6.533 21.882 12 17.467 21.882 12 21.882z"/>
+                </svg>
+                Send Order on WhatsApp
+            </button>
+            <p class="modal-note">🔒 Your details go directly to us — no third parties.</p>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+// Sync modal sizes from the clicked product card
+document.querySelectorAll('.btn-order-wa').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const card        = btn.closest('.product-card');
+        const modalSizes  = document.getElementById('modalSizes');
+        const cardSizes   = card.querySelectorAll('.size-btn');
+        const selectedSize = card.querySelector('.size-btn.selected');
+
+        // Clone size buttons into modal
+        modalSizes.innerHTML = '';
+        cardSizes.forEach(sb => {
+            const clone = document.createElement('button');
+            clone.type       = 'button';
+            clone.className  = 'size-btn' + (sb.classList.contains('selected') ? ' selected' : '');
+            clone.textContent = sb.textContent;
+            clone.dataset.price = sb.dataset.price;
+            clone.addEventListener('click', () => {
+                modalSizes.querySelectorAll('.size-btn').forEach(b => b.classList.remove('selected'));
+                clone.classList.add('selected');
+                const priceEl = document.querySelector('#orderModal .modal-product-price .amount');
+                if (priceEl) priceEl.textContent = clone.dataset.price;
+            });
+            modalSizes.appendChild(clone);
+        });
+
+        // Wire qty in modal
+        const modalQtyRow = document.querySelector('#orderModal .qty-row');
+        if (modalQtyRow) {
+            const minus   = modalQtyRow.querySelector('.qty-minus');
+            const plus    = modalQtyRow.querySelector('.qty-plus');
+            const display = modalQtyRow.querySelector('.qty-display');
+            display.textContent = '1';
+            minus.onclick = () => { const v = parseInt(display.textContent); if (v > 1) display.textContent = v - 1; };
+            plus.onclick  = () => { display.textContent = parseInt(display.textContent) + 1; };
+        }
+    });
+});
+</script>
+</body>
+</html>
