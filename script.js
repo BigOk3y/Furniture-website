@@ -1,15 +1,28 @@
 /* ============================================================
-   NAV — hamburger + active page highlight + scroll shadow
+   NAV — hamburger + active page highlight + scroll-aware background
    ============================================================ */
 (function () {
     const nav       = document.querySelector('nav');
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks  = document.querySelector('.nav-links');
+    const hero      = document.getElementById('homeHero'); // only present on the homepage
 
-    // Scroll shadow
-    window.addEventListener('scroll', () => {
-        nav && nav.classList.toggle('scrolled', window.scrollY > 8);
-    }, { passive: true });
+    // Transparent-over-hero → solid-on-scroll nav background.
+    // Pages without a #homeHero (shop/about/contact) never get the
+    // transparent class, so they keep the normal solid dark nav.
+    function updateNavBackground() {
+        if (!hero) return;
+        const threshold = Math.max(hero.offsetHeight - nav.offsetHeight, 0);
+        const overHero  = window.scrollY < threshold;
+        nav.classList.toggle('nav--transparent', overHero);
+    }
+
+    if (hero) {
+        nav.classList.add('nav--transparent');
+        window.addEventListener('scroll', updateNavBackground, { passive: true });
+        window.addEventListener('resize', updateNavBackground);
+        updateNavBackground();
+    }
 
     // Active page highlight
     const current = location.pathname.split('/').pop() || 'index.html';
@@ -23,17 +36,29 @@
         const expanded = this.getAttribute('aria-expanded') === 'true';
         this.setAttribute('aria-expanded', String(!expanded));
         navLinks.classList.toggle('open');
+        // Force a solid nav while the mobile dropdown is open (even over
+        // the hero), so the menu has a readable backdrop; restore the
+        // scroll-based state once it's closed again.
+        if (hero) {
+            if (navLinks.classList.contains('open')) {
+                nav.classList.remove('nav--transparent');
+            } else {
+                updateNavBackground();
+            }
+        }
     });
     navLinks.querySelectorAll('a').forEach(a => {
         a.addEventListener('click', () => {
             navToggle.setAttribute('aria-expanded', 'false');
             navLinks.classList.remove('open');
+            updateNavBackground();
         });
     });
     document.addEventListener('click', e => {
         if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
             navToggle.setAttribute('aria-expanded', 'false');
             navLinks.classList.remove('open');
+            updateNavBackground();
         }
     });
 })();

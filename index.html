@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://images.unsplash.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="home-hero">
 
 <!-- NAV -->
 <nav>
@@ -29,30 +29,118 @@
     </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="container hero-inner">
-        <div class="hero-text">
-            <span class="badge">Handcrafted Quality</span>
-            <h1>Furniture built<br>to live in, not<br>just look at.</h1>
-            <p>Solid wood pieces designed for real homes — no flimsy flat-pack, no shortcuts. Every piece is built to last generations, not just a few years.</p>
-            <div class="hero-actions">
-                <a href="shop.html" class="btn btn-primary">Shop Now →</a>
-                <a href="about.html" class="btn btn-outline">Our Story</a>
-            </div>
-            <div class="trust-row">
-                <div class="trust-item">
-                    <span style="font-size:1.1rem;">✅</span>
-                    <span>5-year workmanship warranty</span>
-                </div>
-                <div class="trust-item" style="margin-left:8px;">
-                    <span style="font-size:1.1rem;">🚚</span>
-                    <span>Free delivery &amp; assembly across Qatar</span>
-                </div>
-            </div>
+<!-- FULLSCREEN HERO -->
+<section class="hero-fullscreen" id="homeHero">
+    <div class="hero-fullscreen-media">
+        <img src="https://images.unsplash.com/photo-1758448511322-8bfc73daf606?auto=format&fit=crop&w=2400&q=80" alt="Sunlit luxury living room with a sculptural sofa and panoramic city views" loading="eager">
+        <div class="hero-fullscreen-scrim"></div>
+    </div>
+    <div class="hero-fullscreen-content">
+        <span class="hero-eyebrow">Handcrafted in Small Batches</span>
+        <h1>Furniture,<br>reconsidered.</h1>
+        <p>Solid wood, considered proportions, and joinery built to outlast trends — for homes that don't compromise.</p>
+        <div class="hero-fullscreen-actions">
+            <a href="shop.html" class="btn btn-primary btn-lg">Explore the Collection →</a>
+            <a href="about.html" class="btn btn-ghost btn-lg">Our Story</a>
         </div>
-        <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1757862351841-c6f7ac0b0201?auto=format&fit=crop&w=1200&q=80" alt="Modern sectional sofa in a bright living room" width="1200" height="1000" loading="eager">
+    </div>
+    <button type="button" class="hero-scroll-cue" aria-label="Scroll to content" onclick="document.getElementById('categories').scrollIntoView({behavior:'smooth'})">
+        <span></span>
+    </button>
+</section>
+
+<!-- CATEGORY SHOWCASE -->
+<section class="lux-categories" id="categories">
+    <div class="container">
+        <div class="lux-section-head reveal">
+            <span class="lux-eyebrow">Shop by Room</span>
+            <h2 class="lux-heading">Curated for every corner of home</h2>
+        </div>
+        <div class="category-grid">
+            <a href="shop.html" class="category-card category-card--large reveal">
+                <img src="https://images.unsplash.com/photo-1758448755856-01d3add0177b?auto=format&fit=crop&w=1400&q=80" alt="Elegant living room seating with crystal chandelier" loading="lazy">
+                <div class="category-card-overlay">
+                    <span class="category-card-label">Living</span>
+                    <span class="category-card-cta">Shop Living →</span>
+                </div>
+            </a>
+            <a href="shop.html" class="category-card reveal">
+                <img src="https://images.unsplash.com/photo-1748679979601-dc9ec43d900d?auto=format&fit=crop&w=900&q=80" alt="Platform bed frame in a minimalist bedroom" loading="lazy">
+                <div class="category-card-overlay">
+                    <span class="category-card-label">Bedroom</span>
+                    <span class="category-card-cta">Shop Bedroom →</span>
+                </div>
+            </a>
+            <a href="shop.html" class="category-card reveal">
+                <img src="https://images.unsplash.com/photo-1764076327046-fe35f955cba1?auto=format&fit=crop&w=900&q=80" alt="Solid oak dining table set for a gathering" loading="lazy">
+                <div class="category-card-overlay">
+                    <span class="category-card-label">Dining</span>
+                    <span class="category-card-cta">Shop Dining →</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCT SHOWCASE -->
+<section class="lux-products">
+    <div class="container">
+        <div class="lux-section-head reveal">
+            <span class="lux-eyebrow">The Edit</span>
+            <h2 class="lux-heading">Pieces worth building a room around</h2>
+        </div>
+        <div class="lux-product-grid">
+            <a href="shop.html" class="lux-product-card reveal">
+                <div class="lux-product-img"><img src="https://images.unsplash.com/photo-1757862351841-c6f7ac0b0201?auto=format&fit=crop&w=800&q=80" alt="Modern 3-Seater Sofa" loading="lazy"></div>
+                <div class="lux-product-info">
+                    <span class="lux-product-cat">Living Room</span>
+                    <h3>Modern 3-Seater Sofa</h3>
+                    <span class="lux-product-price">QAR 1,890</span>
+                </div>
+            </a>
+            <a href="shop.html" class="lux-product-card reveal">
+                <div class="lux-product-img"><img src="https://images.unsplash.com/photo-1750045662226-536c4e05abfa?auto=format&fit=crop&w=800&q=80" alt="Velvet Accent Armchair" loading="lazy"></div>
+                <div class="lux-product-info">
+                    <span class="lux-product-cat">Living Room</span>
+                    <h3>Velvet Accent Armchair</h3>
+                    <span class="lux-product-price">QAR 690</span>
+                </div>
+            </a>
+            <a href="shop.html" class="lux-product-card reveal">
+                <div class="lux-product-img"><img src="https://images.unsplash.com/photo-1764076327046-fe35f955cba1?auto=format&fit=crop&w=800&q=80" alt="Solid Oak Dining Table" loading="lazy"></div>
+                <div class="lux-product-info">
+                    <span class="lux-product-cat">Dining</span>
+                    <h3>Solid Oak Dining Table</h3>
+                    <span class="lux-product-price">QAR 2,190</span>
+                </div>
+            </a>
+            <a href="shop.html" class="lux-product-card reveal">
+                <div class="lux-product-img"><img src="https://images.unsplash.com/photo-1688127145963-1063f22622a5?auto=format&fit=crop&w=800&q=80" alt="Handcrafted Solid Wood Coffee Table" loading="lazy"></div>
+                <div class="lux-product-info">
+                    <span class="lux-product-cat">Living Room</span>
+                    <h3>Handcrafted Coffee Table</h3>
+                    <span class="lux-product-price">QAR 890</span>
+                </div>
+            </a>
+            <a href="shop.html" class="lux-product-card reveal">
+                <div class="lux-product-img"><img src="https://images.unsplash.com/photo-1748679979601-dc9ec43d900d?auto=format&fit=crop&w=800&q=80" alt="Platform Bed Frame" loading="lazy"></div>
+                <div class="lux-product-info">
+                    <span class="lux-product-cat">Bedroom</span>
+                    <h3>Platform Bed Frame</h3>
+                    <span class="lux-product-price">QAR 1,590</span>
+                </div>
+            </a>
+            <a href="shop.html" class="lux-product-card reveal">
+                <div class="lux-product-img"><img src="https://images.unsplash.com/photo-1768609239321-1cfe14893e80?auto=format&fit=crop&w=800&q=80" alt="New Home Living Room Bundle" loading="lazy"></div>
+                <div class="lux-product-info">
+                    <span class="lux-product-cat">Bundle</span>
+                    <h3>New Home Living Room Bundle</h3>
+                    <span class="lux-product-price">QAR 2,990</span>
+                </div>
+            </a>
+        </div>
+        <div class="text-center" style="margin-top:48px;">
+            <a href="shop.html" class="btn btn-outline">View Full Collection →</a>
         </div>
     </div>
 </section>
